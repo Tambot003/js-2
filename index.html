@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JS exo 2</title>
+</head>
+
+<body>
+    <div id="boxes">
+    </div>
+
+    <script>
+        
+        const square = document.createElement("div")
+        square.classList.add("circle")
+        
+        const container = document.querySelector("#boxes")
+        
+        for(let i = 1; i <= 10; i++) {
+            let newsquare = square.cloneNode()
+            newsquare.innerText = i
+            container.appendChild(newsquare)
+        }
+        
+        const squares = document.querySelectorAll(".circle");
+        squares.forEach(square => {
+            square.addEventListener("click", function() {
+                this.classList.toggle("modif");
+            });
+        });
+        
+        
+        
+    </script>
+    
+</body>
+
+</html>
