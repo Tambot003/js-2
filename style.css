@@ -16,11 +16,11 @@
     background-color: rgb(158, 190, 13);
     font-size: 3em;
     text-align: center;
-    line-height: 195px;
+    line-clamp: 195px;
     margin: 5px;
     animation: appear 0.2s;
     border-radius: 45px;
-    cursor: pointer;
+    cursor:all-scroll;
     transition: background-color 0.8s, color 0.8s, transform 0.8s;
   
 }
